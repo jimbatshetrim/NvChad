@@ -12,3 +12,5 @@ for i = 1, 9, 1 do
     vim.api.nvim_set_current_buf(vim.t.bufs[i])
   end)
 end
+
+vim.api.nvim_set_var("neoformat_try_node_exe", 1)
