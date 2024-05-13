@@ -10,6 +10,10 @@ M.general = {
     ["<S-M-z>"] = { ":Git reset_hunk <CR>", "Git reset hunk" },
     ["<M-_>"] = { ":Git preview_hunk <CR>", "Git preview hunk" },
     ["<leader>op"] = { ":Neoformat prettier <CR>", "Format with prettier" },
+    ["<M-,>"] = {"<c-w>5<", "make spilt pane smaller"},
+    ["<M-.>"] = {"<c-w>5>", "make spilt pane larger"},
+    ["<M-t>"] = {"<c-w>+", "make spilt pane taller"},
+    ["<M-s>"] = {"<c-w>-", "make spilt pane smaller"},
   },
   v = {
     [">"] = { ">gv", "indent" },
