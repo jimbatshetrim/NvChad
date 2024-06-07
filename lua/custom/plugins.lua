@@ -61,6 +61,21 @@ local plugins = {
     lazy = false,
   },
 
+  -- {
+  --   "dreamsofcode-io/ChatGPT.nvim",
+  --   event = "VeryLazy",
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-telescope/telescope.nvim",
+  --   },
+  --   config = function()
+  --     require("chatgpt").setup {
+  --       async_api_key_cmd = "echo ",
+  --     }
+  --   end,
+  -- },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
