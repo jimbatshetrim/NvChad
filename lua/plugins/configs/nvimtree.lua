@@ -1,6 +1,6 @@
 local options = {
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
   disable_netrw = true,
@@ -20,7 +20,7 @@ local options = {
   },
   git = {
     enable = false,
-    ignore = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,
