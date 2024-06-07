@@ -15,6 +15,8 @@ M.general = {
     ["<M-t>"] = { "<c-w>+", "make spilt pane taller" },
     ["<M-s>"] = { "<c-w>-", "make spilt pane smaller" },
     ["<M-Left>"] = { ":e # <CR>", "go to previous file" },
+    ["<M-Down>"] = { "<C-u>", "jump up half a screen" },
+    ["<M-Up>"] = { "<C-d>", "jump down half a screen" },
   },
   v = {
     [">"] = { ">gv", "indent" },
