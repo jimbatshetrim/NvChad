@@ -31,11 +31,10 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "deno",
-    "prettier",
-
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    "typescript-language-server",
+    "tailwindcss-language-server",
+    "prettierd",
+    "eslint-lsp",
   },
 }
 

@@ -12,7 +12,7 @@ local function organize_imports()
 end
 
 local servers_command = {
-  tsserver = {
+  ts_ls = {
     OrganizeImports = {
       organize_imports,
       description = "Organize Imports",
@@ -21,13 +21,19 @@ local servers_command = {
 }
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "tailwindcss" }
+local servers = {
+  "html",
+  "cssls",
+  "ts_ls",
+  "tailwindcss",
+  "eslint",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
-    commands = servers_command["tsserver"],
+    commands = servers_command["ts_ls"],
   }
 end
 
