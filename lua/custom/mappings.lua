@@ -10,6 +10,11 @@ M.general = {
     ["<S-M-z>"] = { ":Git reset_hunk <CR>", "Git reset hunk" },
     ["<M-_>"] = { ":Git preview_hunk <CR>", "Git preview hunk" },
     ["<leader>op"] = { ":Neoformat prettier <CR>", "Format with prettier" },
+    ["<leader>b"] = {
+      "<cmd> Telescope buffers sort_lastused=true sort_mru=true ignore_current_buffer=true <CR>",
+      "Find buffers",
+    },
+    ["<C-h>"] = { "<c-6>", "previous file" },
     ["<M-,>"] = { "<c-w>5<", "make spilt pane smaller" },
     ["<M-.>"] = { "<c-w>5>", "make spilt pane larger" },
     ["<M-t>"] = { "<c-w>+", "make spilt pane taller" },
