@@ -14,7 +14,7 @@ M.general = {
       "<cmd> Telescope buffers sort_lastused=true sort_mru=true ignore_current_buffer=true <CR>",
       "Find buffers",
     },
-    ["<C-h>"] = { "<c-6>", "previous file" },
+    ["<leader><leader>"] = { "<c-6>", "previous buffer" },
     ["<M-,>"] = { "<c-w>5<", "make spilt pane smaller" },
     ["<M-.>"] = { "<c-w>5>", "make spilt pane larger" },
     ["<M-t>"] = { "<c-w>+", "make spilt pane taller" },
