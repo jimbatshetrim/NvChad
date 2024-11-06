@@ -60,6 +60,14 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
   --
   -- {
   --   "sbdchd/neoformat",
