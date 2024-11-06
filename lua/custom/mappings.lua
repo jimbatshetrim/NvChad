@@ -26,32 +26,28 @@ M.general = {
   v = {
     [">"] = { ">gv", "indent" },
   },
+}
+
+M.copilot = {
   i = {
-    -- Accept Copilot suggestion with <C-l>
     ["<C-l>"] = {
       function()
-        local copilot_accept = vim.fn["copilot#Accept"]()
-        if copilot_accept == "" then
-          return "<C-l>" -- Fallback if no Copilot suggestion
-        end
-        return copilot_accept
+        vim.fn.feedkeys(vim.fn["copilot#Accept"](), "")
       end,
-      "Accept Copilot suggestion",
-      opts = { expr = true, noremap = true, silent = true },
+      "Copilot Accept",
+      { replace_keycodes = true, nowait = true, silent = true, expr = true, noremap = true },
     },
 
-    -- Cycle to the next Copilot suggestion with <C-j>
     ["<C-j>"] = {
       function()
-        vim.fn["copilot#Next"]()
+        vim.fn.feedkeys(vim.fn["copilot#Next"](), "")
       end,
       "Next Copilot suggestion",
     },
 
-    -- Cycle to the previous Copilot suggestion with <C-k>
     ["<C-k>"] = {
       function()
-        vim.fn["copilot#Previous"]()
+        vim.fn.feedkeys(vim.fn["copilot#Previous"](), "")
       end,
       "Previous Copilot suggestion",
     },

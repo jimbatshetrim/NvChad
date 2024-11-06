@@ -14,6 +14,3 @@ for i = 1, 9, 1 do
 end
 
 vim.api.nvim_set_var("neoformat_try_node_exe", 1)
-
--- Disable Copilot's default `<Tab>` mapping
-vim.g.copilot_no_tab_map = true
