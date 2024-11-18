@@ -78,6 +78,11 @@ local plugins = {
     end,
   },
 
+  {
+    "tadaa/vimade",
+    lazy = false,
+  },
+
   --
   -- {
   --   "sbdchd/neoformat",
