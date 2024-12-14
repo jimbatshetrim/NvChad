@@ -22,6 +22,12 @@ M.general = {
     ["<M-Left>"] = { ":e # <CR>", "go to previous file" },
     ["<M-Up>"] = { "<C-u>", "jump up half a screen" },
     ["<M-Down>"] = { "<C-d>", "jump down half a screen" },
+    ["<M-/>"] = { ":Twilight <CR>", "Toggle Twilight" },
+
+    ["<M-j>"] = { ":Treewalker Down<CR>", "below function" },
+    ["<M-k>"] = { ":Treewalker Up<CR>", "above function" },
+    ["<M-h>"] = { ":Treewalker Left<CR>", "left function" },
+    ["<M-l>"] = { ":Treewalker Right<CR>", "right function" },
   },
   v = {
     [">"] = { ">gv", "indent" },
