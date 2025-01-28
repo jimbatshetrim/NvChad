@@ -26,8 +26,6 @@ M.general = {
 
     ["<M-j>"] = { ":Treewalker Down<CR>", "below function" },
     ["<M-k>"] = { ":Treewalker Up<CR>", "above function" },
-    ["<M-h>"] = { ":Treewalker Left<CR>", "left function" },
-    ["<M-l>"] = { ":Treewalker Right<CR>", "right function" },
   },
   v = {
     [">"] = { ">gv", "indent" },
